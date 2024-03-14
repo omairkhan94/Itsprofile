@@ -6,28 +6,13 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
-    name: "Thankful Thoughts",
+    name: "Mail Master Nodemailer",
     description:
-      "ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.",
-    image: "/thankfulthoughts.png",
-    github: "https://github.com/hqasmei/thankful-thoughts",
-    link: "https://thankfulthoughts.io/",
-  },
-  {
-    name: "PlatoIO",
-    description: "PlatoIO is a to do list app that built using the PERN stack.",
-    image: "/platoio.png",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://platoio.com/register",
-  },
-  {
-    name: "Kator Family Photos",
-    description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
-  },
+      "Mail Master is a nodemailer and mailgen based web app to send messages to ethereal and real account Gmail",
+    image: "",
+    github: "https://github.com/omairkhan94/Mail-Master-Nodemailer",
+    link: "https://github.com/omairkhan94/Mail-Master-Nodemailer",
+  }
 ]
 
 const ProjectsSection = () => {
@@ -47,7 +32,7 @@ const ProjectsSection = () => {
                   <div className=" md:w-1/2">
                     <Link href={project.link}>
                       <Image
-                        src={project.image}
+                        src={`/download.png`}
                         alt=""
                         width={1000}
                         height={1000}
