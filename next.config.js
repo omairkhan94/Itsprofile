@@ -1,8 +1,8 @@
 // /** @type {import('next').NextConfig} */
 // const nextConfig = {
-//   experimental: {
-//     appDir: true,
-//   },
+//     experimental: {
+//         appDir: true,
+//       },
 // }
 
 // module.exports = nextConfig
@@ -15,3 +15,14 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
+
+
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//     experimental: {
+//       typedRoutes: true,
+//     },
+//   }
+   
+//   module.exports = nextConfig
