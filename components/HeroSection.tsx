@@ -22,7 +22,7 @@ const HeroSection = () => {
         <div className="md:mt-2 md:w-3/5">
           <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl">I&apos;m Omair!</h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl">
-            I&apos;m a <span className="font-semibold text-teal-600">Web Developer</span>
+            I&apos;m a <span className="font-semibold text-teal-600"> Web Developer </span>
             based in Peshawar, KP. Working towards creating Web and Mobile Apps that
             make life easier and more meaningful.
           </p>

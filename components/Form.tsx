@@ -1,10 +1,39 @@
 'use client'
 
 import React, { useState } from "react";
+import { useRef } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
+import emailjs from '@emailjs/browser';
 // axios import commented out since it's not used in the onSubmit function, 
 // but you can uncomment it if you plan to send data to a server.
 // import axios from 'axios';
+
+//email:
+
+const templateParams = {
+  name: 'OmairKhan',
+  notes: 'Check this out!',
+};
+
+emailjs
+  .send('service_wkzfuol', 'template_gq00n87', templateParams, {
+    publicKey: 'R8b81Zyp43mJlbgff',
+  })
+  .then(
+    (response) => {
+      console.log('SUCCESS!', response.status, response.text);
+    },
+    (err) => {
+      console.log('FAILED...', err);
+    },
+  );
+
+
+
+
+
+
+
 
 interface FormData {
   username: string;
@@ -58,6 +87,7 @@ const Form: React.FC = () => {
             <div>
               <label htmlFor="username" className="block">Username:</label>
               <input
+              placeholder="yourname"
                 type="text"
                 id="username"
                 {...register("username", {
@@ -75,6 +105,7 @@ const Form: React.FC = () => {
             <div>
               <label htmlFor="email" className="block">Email:</label>
               <input
+              placeholder="khan123@gmail.com"
                 type="email"
                 id="email"
                 {...register("email", {
@@ -88,6 +119,7 @@ const Form: React.FC = () => {
             <div>
               <label htmlFor="message" className="block">Message:</label>
               <textarea
+              placeholder="feedback or suggestion"
                 id="message"
                 {...register("message", {
                   required: "Message is required",
@@ -102,10 +134,12 @@ const Form: React.FC = () => {
         )}
       </div>
     </div>
+
   );
 }
 
 export default Form;
+
 
 
 

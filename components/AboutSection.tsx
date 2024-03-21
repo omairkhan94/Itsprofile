@@ -4,12 +4,12 @@ import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import { ClassNames } from "@emotion/react";
 import Link from "next/link";
 const skills = [
-  { skill: "HTML" },
-  { skill: "CSS" },
+  { skill: "Web App" },
+  { skill: "Ant, chakra, mui(D)" },
   { skill: "JavaScript" },
-  { skill: "React" },
+  { skill: "Reactjs" },
   { skill: "Next.js" },
-  { skill: "Tailwind CSS" },
+  { skill: "MongoDB" },
   { skill: "MUI" },
   { skill: "Nodejs" },
   { skill: "Git" },
