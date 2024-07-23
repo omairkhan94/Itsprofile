@@ -10,16 +10,25 @@ const projects = [
     description:
       "It's an Ecommerce page, filtering different products based on user choice and thier interst.",
     image: "",
-    github: "#",
+    github: "https://github.com/omairkhan94",
     link: "https://simpleshoppage.vercel.app/",
-  },  
+  }, 
+   {
+    name: "Weather App",
+    description:
+      "It's a weather app single page, city search around the globe",
+    image: "",
+    github: "https://github.com/omairkhan94",
+    link: "",
+  }, 
+  
   {
     name: "Mail Master Nodemailer",
     description:
       "Mail Master is a nodemailer and mailgen based web app to send messages to ethereal and real account Gmail",
     image: "",
-    github: "#",
-    link: "#",
+    github: "https://github.com/omairkhan94",
+    link: "##",
   }
 ]
 
